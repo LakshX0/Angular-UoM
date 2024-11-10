@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1 id="header">jQuery Effects Demo.</h1>
+
+    <button type="button" class="hidebtn">Hide</button>
+    <button type="button" class="showbtn">Show</button>
+    <button type="button" class="togglebtn">Toggle</button>
+    <hr>
+
+    <p class="pfast">This Paragraph is shown fast speed.</p>
+    <p class="pslow">This Paragraph is shown slow speed.</p>
+    <p class="pslow2000">This Paragraph is shown 2000ms speed.</p>
+    <hr>
+
+    <button type="button" class="startbtn">Start</button>
+    <hr>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#">
+            <label for="name">Enter your Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name"><br>
+
+            <label for="email">Enter your Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Your email"><br>
+
+            <label for="password">Enter your new password</label><br>
+            <input type="password" id="pw" name="password" placeholder="New Password"><br>
+
+            <label for="comPassword">Confirm your new password</label><br>
+            <input type="comPassword" id="cpw" name="comPassword" placeholder="Password again"><br>
+
+        </form>
+        <button type= "submit" class="formSubmit">Register</button>
+    </div>
+    
+
+
+    <script>
+        $(document).ready(function(){
+            $(".hidebtn").click(function() {
+                $(".pfast").hide("fast")
+                $(".pslow").hide("slow")
+                $(".pslow2000").hide(1800)
+            })
+
+            $(".showbtn").click(function() {
+                $(".pfast").show("fast")
+                $(".pslow").show("slow")
+                $(".pslow2000").show(1800)
+            })
+
+            $(".togglebtn").click(function() {
+                $(".pfast").toggle("fast")
+                $(".pslow").toggle("slow")
+                $(".pslow2000").toggle(1800)
+            })
+
+            
+        })
+        
+    </script>
+</body>
+</html>

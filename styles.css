@@ -1,0 +1,56 @@
+.hidebtn, .showbtn, .togglebtn {
+    background-color: aquamarine;
+    margin: 5px;
+    padding: 2px;
+    border: 0.3;
+    border-radius: 18px;
+    height: 40px;
+    width: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    font-display: center;
+}
+.startbtn {
+    background-color: hsl(0, 0%, 87%);
+    margin: 5px;
+    padding: 2px;
+    border: solid hsla(0, 0%, 0%, 0.179) 1px;
+    border-radius: 18px;
+    height: 40px;
+    width: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    font-display: center;
+}
+.container {
+    max-width: 400px;
+    background-color: rgb(141, 189, 31);
+    border-radius: 10px;
+}
+.container h2 {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+.container form {
+    text-align: left;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+#name, #email, #pw, #cpw {
+    width: 370px;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.formSubmit {
+    background-color: rgb(216, 216, 216);
+    width: 370px;
+    margin:  15px; 
+    height: 30px; 
+    border-radius: 10px;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
