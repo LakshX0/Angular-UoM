@@ -42,6 +42,33 @@
         </form>
         <button type= "submit" class="formSubmit">Register</button>
     </div>
+
+    <div class="ajax-test">
+        <h1>Animal World</h1>
+        <h2>Cats</h2>
+
+        <img src="./Cat.jpg" alt="cat sitting">
+        <p>cat is one of the cutiest pets for people. 
+            Most of the time they are lazy. 
+            But cats are exceptional hunters!
+        </p>
+        <button id="more-info" type="submit">More information</button>
+        <div id="more-info-div"></div>
+
+        <script>
+            $(document).ready(function() {
+                $("#more-info").click(function(){
+                    $.ajax('moreInfo.html', {
+                        success: function(result) {
+                            $('#more-info-div').append(result);
+                            $('#more-info').hide();
+                        }
+                    })
+                })
+            })
+        </script>
+
+    </div>
     
 
 

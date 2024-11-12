@@ -54,3 +54,12 @@
     font-weight: bold;
     font-size: 17px;
 }
+#more-info {
+    background-color: brown;
+    height: 30px;
+    max-width: 200px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+    border-radius: 8px;
+    border: 0;
+}
